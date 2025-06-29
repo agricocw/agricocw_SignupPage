@@ -1,4 +1,4 @@
-namespace agricocw_SignupPage;
+﻿namespace agricocw_SignupPage;
 
 public partial class SignupPage : ContentPage
 {
@@ -34,6 +34,6 @@ public partial class SignupPage : ContentPage
         ErrorLabel.IsVisible = false;
 
         await Shell.Current.GoToAsync(
-            $"profile?username={Uri.EscapeDataString(username)}&email={Uri.EscapeDataString(email)}");
+            $"///profile?username={Uri.EscapeDataString(username)}&email={Uri.EscapeDataString(email)}");
     }
 }
